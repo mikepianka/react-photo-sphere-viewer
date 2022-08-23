@@ -23,7 +23,7 @@
         "deploy": "gh-pages -d example/build"
     },
     "dependencies": {
-        "@mikepianka/photo-sphere-viewer": "^4.7.1-BETA-20220823",
+        "@mikepianka/photo-sphere-viewer": "^4.7.1-BETA-20220823-2",
         "autoprefixer": "^10.4.7",
         "eventemitter3": "^4.0.7"
     },
