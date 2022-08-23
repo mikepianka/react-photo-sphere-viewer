@@ -23,9 +23,9 @@
         "deploy": "gh-pages -d example/build"
     },
     "dependencies": {
+        "@mikepianka/photo-sphere-viewer": "^4.7.1-BETA-20220823",
         "autoprefixer": "^10.4.7",
-        "eventemitter3": "^4.0.7",
-        "photo-sphere-viewer": "^4.6.4"
+        "eventemitter3": "^4.0.7"
     },
     "peerDependencies": {
         "prop-types": "^15.5.4",

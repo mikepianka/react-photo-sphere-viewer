@@ -1,8 +1,11 @@
 import React, { useState, useEffect, useImperativeHandle, forwardRef, createRef } from "react"
-import { Viewer, ViewerOptions, PanoData, ClickData, Position, AnimateOptions } from "photo-sphere-viewer"
-import "./styles.css"
-import "photo-sphere-viewer/dist/photo-sphere-viewer.css"
 import EventEmitter from "eventemitter3"
+import { Viewer, ViewerOptions, PanoData, ClickData, Position, AnimateOptions } from "@mikepianka/photo-sphere-viewer"
+import { CompassPlugin } from "@mikepianka/photo-sphere-viewer/dist/plugins/compass"
+import { EquirectangularTilesAdapter } from "@mikepianka/photo-sphere-viewer/dist/adapters/equirectangular-tiles"
+import "./styles.css"
+import "@mikepianka/photo-sphere-viewer/dist/photo-sphere-viewer.css"
+import "@mikepianka/photo-sphere-viewer/dist/plugins/compass.css"
 
 const eventEmitter = new EventEmitter()
 const Emitter = {
@@ -238,3 +241,4 @@ const ReactPhotoSphereViewer = forwardRef((options: Props, ref: any): React.Reac
 })
 
 export default ReactPhotoSphereViewer
+export { CompassPlugin, EquirectangularTilesAdapter, Viewer }
